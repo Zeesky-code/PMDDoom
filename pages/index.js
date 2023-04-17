@@ -1,17 +1,24 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import Header from '../components/header';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Header></Header>
       <Head>
-        <title>HappiHer</title>
+        <title>PMDDoom</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">HappiHer!</a>
+          Welcome to PMDDoom!
+        </h1>
+        <img src="/images/layingdown.jpg" />
+        <h1 className="title">
+          Read <Link href="/posts/first-post">this page!</Link>
         </h1>
 
         <p className={styles.description}>
@@ -19,6 +26,7 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
+          
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -50,14 +58,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+        <h1>PMDDoom</h1>
       </footer>
 
       <style jsx>{`
